@@ -287,10 +287,6 @@
       <Project>{494fe73e-b46b-4c67-bbbf-d7f79e5da573}</Project>
       <Name>ProjectManager.BusinessEntities</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ProjectManager.Logger\ProjectManager.Logger.csproj">
-      <Project>{1d1245f3-266d-4b4d-8ab7-e988438a3fd3}</Project>
-      <Name>ProjectManager.Logger</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

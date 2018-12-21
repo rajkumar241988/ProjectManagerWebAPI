@@ -1,6 +1,5 @@
 ﻿using ProjectManager.BL;
 using ProjectManager.BusinessEntities;
-using ProjectManager.Logger;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +12,7 @@ namespace ProjectManager.WebAPI.Controllers
     public class ProjectController : ApiController
     {
         private readonly IProjectServices _projectServices;
-        private readonly ILogger _loggerServices;
+        //private readonly ILogger _loggerServices;
         private readonly IUserServices _userServices;
 
 
@@ -27,7 +26,7 @@ namespace ProjectManager.WebAPI.Controllers
             _projectServices = new ProjectServices();
             _userServices = new UserServices();
 
-            _loggerServices = new LoggerException();
+            //_loggerServices = new LoggerException();
         }
 
         #endregion
@@ -37,7 +36,7 @@ namespace ProjectManager.WebAPI.Controllers
         {
             try
             {
-                _loggerServices.LogInfo("InfoCode: API Info | Message :" + "File Name : ProjectController | Method Name : Get | Description : Method Begin", LoggerConstants.Informations.WebAPIInfo);
+                //_loggerServices.LogInfo("InfoCode: API Info | Message :" + "File Name : ProjectController | Method Name : Get | Description : Method Begin", LoggerConstants.Informations.WebAPIInfo);
                 var projects = _projectServices.GetProjectsSearch();
                 if (projects != null)
                 {
@@ -48,7 +47,7 @@ namespace ProjectManager.WebAPI.Controllers
             }
             catch (Exception exception)
             {
-                _loggerServices.LogException(exception, LoggerConstants.Informations.WebAPIInfo);
+                //_loggerServices.LogException(exception, LoggerConstants.Informations.WebAPIInfo);
                 throw exception;
             }
             return Request.CreateErrorResponse(HttpStatusCode.NotFound, "Projects not found");
@@ -61,7 +60,7 @@ namespace ProjectManager.WebAPI.Controllers
             {
                 if(id > 0)
                 {
-                    _loggerServices.LogInfo("InfoCode: API Info | Message :" + "File Name : ProjectController | Method Name : GetProjectById | Description : Method Begin", LoggerConstants.Informations.WebAPIInfo);
+                   // _loggerServices.LogInfo("InfoCode: API Info | Message :" + "File Name : ProjectController | Method Name : GetProjectById | Description : Method Begin", LoggerConstants.Informations.WebAPIInfo);
                     var project = _projectServices.GetProjectById(id);
                     if (project != null)
                     {
@@ -74,7 +73,7 @@ namespace ProjectManager.WebAPI.Controllers
             }
             catch (Exception exception)
             {
-                _loggerServices.LogException(exception, LoggerConstants.Informations.WebAPIInfo);
+                //_loggerServices.LogException(exception, LoggerConstants.Informations.WebAPIInfo);
             }
             return Request.CreateErrorResponse(HttpStatusCode.NotFound, "No project found for this id");
         }
@@ -84,7 +83,7 @@ namespace ProjectManager.WebAPI.Controllers
         {
             try
             {
-                _loggerServices.LogInfo("InfoCode: API Info | Message :" + "File Name : ProjectController | Method Name : CreateProject | Description : Method Begin", LoggerConstants.Informations.WebAPIInfo);
+               // _loggerServices.LogInfo("InfoCode: API Info | Message :" + "File Name : ProjectController | Method Name : CreateProject | Description : Method Begin", LoggerConstants.Informations.WebAPIInfo);
                 
                 int iProjectId = _projectServices.CreateProject(projectEntity);
 
@@ -97,7 +96,7 @@ namespace ProjectManager.WebAPI.Controllers
             }
             catch (Exception exception)
             {
-                _loggerServices.LogException(exception, LoggerConstants.Informations.WebAPIInfo);
+                //_loggerServices.LogException(exception, LoggerConstants.Informations.WebAPIInfo);
             }
             return 0;
 
@@ -110,7 +109,7 @@ namespace ProjectManager.WebAPI.Controllers
             {
                 if (id > 0)
                 {
-                    _loggerServices.LogInfo("InfoCode: API Info | Message :" + "File Name : ProjectController | Method Name : UpdateProject | Description : Method Begin", LoggerConstants.Informations.WebAPIInfo);
+                   // _loggerServices.LogInfo("InfoCode: API Info | Message :" + "File Name : ProjectController | Method Name : UpdateProject | Description : Method Begin", LoggerConstants.Informations.WebAPIInfo);
                     bool returnStatus = _projectServices.UpdateProject(id, projectEntity);
                     if (projectEntity.Manager_ID != 0)
                     {
@@ -126,7 +125,7 @@ namespace ProjectManager.WebAPI.Controllers
             }
             catch (Exception exception)
             {
-                _loggerServices.LogException(exception, LoggerConstants.Informations.WebAPIInfo);
+                //_loggerServices.LogException(exception, LoggerConstants.Informations.WebAPIInfo);
             }
             return false;
         }
@@ -138,7 +137,7 @@ namespace ProjectManager.WebAPI.Controllers
             {
                 if (id > 0)
                 {
-                    _loggerServices.LogInfo("InfoCode: API Info | Message :" + "File Name : ProjectController | Method Name : DeleteProject | Description : Method Begin", LoggerConstants.Informations.WebAPIInfo);
+                   // _loggerServices.LogInfo("InfoCode: API Info | Message :" + "File Name : ProjectController | Method Name : DeleteProject | Description : Method Begin", LoggerConstants.Informations.WebAPIInfo);
                     var isSuccess = _projectServices.DeleteProject(id);
 
                     if (isSuccess)
@@ -152,7 +151,7 @@ namespace ProjectManager.WebAPI.Controllers
             }
             catch (Exception exception)
             {
-                _loggerServices.LogException(exception, LoggerConstants.Informations.WebAPIInfo);
+                //_loggerServices.LogException(exception, LoggerConstants.Informations.WebAPIInfo);
             }
             return false;
         }

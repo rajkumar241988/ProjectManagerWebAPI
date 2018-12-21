@@ -1,6 +1,5 @@
 ﻿using ProjectManager.BL;
 using ProjectManager.BusinessEntities;
-using ProjectManager.Logger;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +12,7 @@ namespace ProjectManager.WebAPI.Controllers
     public class TaskController : ApiController
     {
         private readonly ITaskServices _taskServices;
-        private readonly ILogger _loggerServices;
+        //private readonly ILogger _loggerServices;
         private readonly IUserServices _userServices;
 
 
@@ -27,7 +26,7 @@ namespace ProjectManager.WebAPI.Controllers
             _taskServices = new TaskServices();
             _userServices = new UserServices();
 
-            _loggerServices = new LoggerException();
+            //_loggerServices = new LoggerException();
         }
 
         #endregion
@@ -36,7 +35,7 @@ namespace ProjectManager.WebAPI.Controllers
         {
             try
             {
-                _loggerServices.LogInfo("InfoCode: API Info | Message :" + "File Name : TaskController | Method Name : GetAllTasks | Description : Method Begin", LoggerConstants.Informations.WebAPIInfo);
+                //_loggerServices.LogInfo("InfoCode: API Info | Message :" + "File Name : TaskController | Method Name : GetAllTasks | Description : Method Begin", LoggerConstants.Informations.WebAPIInfo);
 
                 var tasks = _taskServices.GetTaskSearch();
                 if (tasks != null)
@@ -48,7 +47,7 @@ namespace ProjectManager.WebAPI.Controllers
             }
             catch (Exception exception)
             {
-                _loggerServices.LogException(exception, LoggerConstants.Informations.WebAPIInfo);
+                //_loggerServices.LogException(exception, LoggerConstants.Informations.WebAPIInfo);
             }
             return Request.CreateErrorResponse(HttpStatusCode.NotFound, "Tasks not found");
         }
@@ -58,7 +57,7 @@ namespace ProjectManager.WebAPI.Controllers
         {
             try
             {
-                _loggerServices.LogInfo("InfoCode: API Info | Message :" + "File Name : TaskController | Method Name : GetTaskById | Description : Method Begin", LoggerConstants.Informations.WebAPIInfo);
+                //_loggerServices.LogInfo("InfoCode: API Info | Message :" + "File Name : TaskController | Method Name : GetTaskById | Description : Method Begin", LoggerConstants.Informations.WebAPIInfo);
 
                 var task = _taskServices.GetTaskById(id);
                 if (task != null)
@@ -66,7 +65,7 @@ namespace ProjectManager.WebAPI.Controllers
             }
             catch (Exception exception)
             {
-                _loggerServices.LogException(exception, LoggerConstants.Informations.WebAPIInfo);
+                //_loggerServices.LogException(exception, LoggerConstants.Informations.WebAPIInfo);
             }
             return Request.CreateErrorResponse(HttpStatusCode.NotFound, "No user found for this id");
         }
@@ -76,7 +75,7 @@ namespace ProjectManager.WebAPI.Controllers
         {
             try
             {
-                _loggerServices.LogInfo("InfoCode: API Info | Message :" + "File Name : TaskController | Method Name : CreateTask | Description : Method Begin", LoggerConstants.Informations.WebAPIInfo);
+                //_loggerServices.LogInfo("InfoCode: API Info | Message :" + "File Name : TaskController | Method Name : CreateTask | Description : Method Begin", LoggerConstants.Informations.WebAPIInfo);
 
                 int iTaskID = _taskServices.CreateTask(taskEntity);
                 if(taskEntity.User_ID != null)
@@ -92,7 +91,7 @@ namespace ProjectManager.WebAPI.Controllers
             }
             catch (Exception exception)
             {
-                _loggerServices.LogException(exception, LoggerConstants.Informations.WebAPIInfo);
+                //_loggerServices.LogException(exception, LoggerConstants.Informations.WebAPIInfo);
             }
             return 0;
         }
@@ -104,7 +103,7 @@ namespace ProjectManager.WebAPI.Controllers
             {
                 if (id > 0)
                 {
-                    _loggerServices.LogInfo("InfoCode: API Info | Message :" + "File Name : TaskController | Method Name : UpdateTask | Description : Method Begin", LoggerConstants.Informations.WebAPIInfo);
+                    //_loggerServices.LogInfo("InfoCode: API Info | Message :" + "File Name : TaskController | Method Name : UpdateTask | Description : Method Begin", LoggerConstants.Informations.WebAPIInfo);
                     bool returnStatus = _taskServices.UpdateTask(id, taskEntity);
 
                     if (taskEntity.User_ID != null)
@@ -123,7 +122,7 @@ namespace ProjectManager.WebAPI.Controllers
             }
             catch (Exception exception)
             {
-                _loggerServices.LogException(exception, LoggerConstants.Informations.WebAPIInfo);
+                //_loggerServices.LogException(exception, LoggerConstants.Informations.WebAPIInfo);
             }
             return false;
         }
@@ -145,7 +144,7 @@ namespace ProjectManager.WebAPI.Controllers
             }
             catch (Exception exception)
             {
-                _loggerServices.LogException(exception, LoggerConstants.Informations.WebAPIInfo);
+                //_loggerServices.LogException(exception, LoggerConstants.Informations.WebAPIInfo);
             }
             return false;
         }

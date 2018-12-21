@@ -1,6 +1,5 @@
 ﻿using ProjectManager.BL;
 using ProjectManager.BusinessEntities;
-using ProjectManager.Logger;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,19 +12,19 @@ namespace ProjectManager.WebAPI.Controllers
     public class ParentTaskController : ApiController
     {
         private readonly IParentTaskServices _taskServices;
-        private readonly ILogger _loggerServices;
+        //private readonly ILogger _loggerServices;
 
         public ParentTaskController()
         {
             _taskServices = new ParentTaskServices();
-            _loggerServices = new LoggerException();
+           // _loggerServices = new LoggerException();
         }
         // GET: api/ParentTask
         public HttpResponseMessage Get()
         {
             try
             {
-                _loggerServices.LogInfo("InfoCode: API Info | Message :" + "File Name : TaskController | Method Name : GetAllTasks | Description : Method Begin", LoggerConstants.Informations.WebAPIInfo);
+                //_loggerServices.LogInfo("InfoCode: API Info | Message :" + "File Name : TaskController | Method Name : GetAllTasks | Description : Method Begin", LoggerConstants.Informations.WebAPIInfo);
 
                 var tasks = _taskServices.GetAllParentTasks();
                 if (tasks != null)
@@ -37,7 +36,7 @@ namespace ProjectManager.WebAPI.Controllers
             }
             catch (Exception exception)
             {
-                _loggerServices.LogException(exception, LoggerConstants.Informations.WebAPIInfo);
+                //_loggerServices.LogException(exception, LoggerConstants.Informations.WebAPIInfo);
             }
             return Request.CreateErrorResponse(HttpStatusCode.NotFound, "Tasks not found");
         }
@@ -53,13 +52,13 @@ namespace ProjectManager.WebAPI.Controllers
         {
             try
             {
-                _loggerServices.LogInfo("InfoCode: API Info | Message :" + "File Name : ParentTaskController | Method Name : CreateTask | Description : Method Begin", LoggerConstants.Informations.WebAPIInfo);
+                //_loggerServices.LogInfo("InfoCode: API Info | Message :" + "File Name : ParentTaskController | Method Name : CreateTask | Description : Method Begin", LoggerConstants.Informations.WebAPIInfo);
 
                 return _taskServices.CreateParentTask(taskEntity);
             }
             catch (Exception exception)
             {
-                _loggerServices.LogException(exception, LoggerConstants.Informations.WebAPIInfo);
+                //_loggerServices.LogException(exception, LoggerConstants.Informations.WebAPIInfo);
             }
             return 0;
         }

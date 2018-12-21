@@ -67,10 +67,6 @@
       <Project>{d019b9f2-7ef0-40b5-8096-7149289c2656}</Project>
       <Name>ProjectManager.DAL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ProjectManager.Logger\ProjectManager.Logger.csproj">
-      <Project>{1d1245f3-266d-4b4d-8ab7-e988438a3fd3}</Project>
-      <Name>ProjectManager.Logger</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

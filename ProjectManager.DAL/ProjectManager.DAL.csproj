@@ -106,12 +106,6 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ProjectManager.Logger\ProjectManager.Logger.csproj">
-      <Project>{1d1245f3-266d-4b4d-8ab7-e988438a3fd3}</Project>
-      <Name>ProjectManager.Logger</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="ProjectManagerModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ProjectManagerModel.edmx</DependentUpon>
