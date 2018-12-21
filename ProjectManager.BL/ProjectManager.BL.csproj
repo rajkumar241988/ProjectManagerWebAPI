@@ -69,7 +69,41 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="bin\Debug\ProjectManager.DAL.dll.config" />
+    <None Include="bin\Release\ProjectManager.DAL.dll.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\AutoMapper.dll" />
+    <Content Include="bin\Debug\AutoMapper.pdb" />
+    <Content Include="bin\Debug\AutoMapper.xml" />
+    <Content Include="bin\Debug\EntityFramework.dll" />
+    <Content Include="bin\Debug\EntityFramework.xml" />
+    <Content Include="bin\Debug\ProjectManager.BL.dll" />
+    <Content Include="bin\Debug\ProjectManager.BL.pdb" />
+    <Content Include="bin\Debug\ProjectManager.BusinessEntities.dll" />
+    <Content Include="bin\Debug\ProjectManager.BusinessEntities.pdb" />
+    <Content Include="bin\Debug\ProjectManager.DAL.dll" />
+    <Content Include="bin\Debug\ProjectManager.DAL.pdb" />
+    <Content Include="bin\Debug\System.ValueTuple.dll" />
+    <Content Include="bin\Debug\System.ValueTuple.xml" />
+    <Content Include="bin\Release\AutoMapper.dll" />
+    <Content Include="bin\Release\AutoMapper.pdb" />
+    <Content Include="bin\Release\AutoMapper.xml" />
+    <Content Include="bin\Release\EntityFramework.dll" />
+    <Content Include="bin\Release\EntityFramework.xml" />
+    <Content Include="bin\Release\log4net.dll" />
+    <Content Include="bin\Release\log4net.xml" />
+    <Content Include="bin\Release\ProjectManager.BL.dll" />
+    <Content Include="bin\Release\ProjectManager.BL.pdb" />
+    <Content Include="bin\Release\ProjectManager.BusinessEntities.dll" />
+    <Content Include="bin\Release\ProjectManager.BusinessEntities.pdb" />
+    <Content Include="bin\Release\ProjectManager.DAL.dll" />
+    <Content Include="bin\Release\ProjectManager.DAL.pdb" />
+    <Content Include="bin\Release\ProjectManager.Logger.dll" />
+    <Content Include="bin\Release\ProjectManager.Logger.pdb" />
+    <Content Include="bin\Release\System.ValueTuple.dll" />
+    <Content Include="bin\Release\System.ValueTuple.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

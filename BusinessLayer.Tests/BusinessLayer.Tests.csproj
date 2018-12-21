@@ -82,6 +82,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="bin\Debug\BusinessLayer.Tests.dll.config" />
+    <None Include="bin\Debug\nunit_random_seed.tmp" />
+    <None Include="bin\Debug\ProjectManager.DAL.dll.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -101,6 +104,141 @@
       <Project>{1470bd3a-6aba-4f35-8b3f-ea3bf568ad43}</Project>
       <Name>TestHelper</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\AutoMapper.dll" />
+    <Content Include="bin\Debug\AutoMapper.pdb" />
+    <Content Include="bin\Debug\AutoMapper.xml" />
+    <Content Include="bin\Debug\BusinessLayer.Tests.dll" />
+    <Content Include="bin\Debug\BusinessLayer.Tests.pdb" />
+    <Content Include="bin\Debug\Castle.Core.dll" />
+    <Content Include="bin\Debug\Castle.Core.xml" />
+    <Content Include="bin\Debug\EntityFramework.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\Debug\EntityFramework.xml" />
+    <Content Include="bin\Debug\Microsoft.Win32.Primitives.dll" />
+    <Content Include="bin\Debug\Moq.dll" />
+    <Content Include="bin\Debug\Moq.pdb" />
+    <Content Include="bin\Debug\Moq.xml" />
+    <Content Include="bin\Debug\netstandard.dll" />
+    <Content Include="bin\Debug\nunit.engine.api.dll" />
+    <Content Include="bin\Debug\nunit.engine.dll" />
+    <Content Include="bin\Debug\nunit.framework.dll" />
+    <Content Include="bin\Debug\nunit.framework.pdb" />
+    <Content Include="bin\Debug\nunit.framework.xml" />
+    <Content Include="bin\Debug\NUnit3.TestAdapter.dll" />
+    <Content Include="bin\Debug\NUnit3.TestAdapter.pdb" />
+    <Content Include="bin\Debug\ProjectManager.BL.dll" />
+    <Content Include="bin\Debug\ProjectManager.BL.pdb" />
+    <Content Include="bin\Debug\ProjectManager.BusinessEntities.dll" />
+    <Content Include="bin\Debug\ProjectManager.BusinessEntities.pdb" />
+    <Content Include="bin\Debug\ProjectManager.DAL.dll" />
+    <Content Include="bin\Debug\ProjectManager.DAL.pdb" />
+    <Content Include="bin\Debug\System.AppContext.dll" />
+    <Content Include="bin\Debug\System.Collections.Concurrent.dll" />
+    <Content Include="bin\Debug\System.Collections.dll" />
+    <Content Include="bin\Debug\System.Collections.NonGeneric.dll" />
+    <Content Include="bin\Debug\System.Collections.Specialized.dll" />
+    <Content Include="bin\Debug\System.ComponentModel.dll" />
+    <Content Include="bin\Debug\System.ComponentModel.EventBasedAsync.dll" />
+    <Content Include="bin\Debug\System.ComponentModel.Primitives.dll" />
+    <Content Include="bin\Debug\System.ComponentModel.TypeConverter.dll" />
+    <Content Include="bin\Debug\System.Console.dll" />
+    <Content Include="bin\Debug\System.Data.Common.dll" />
+    <Content Include="bin\Debug\System.Diagnostics.Contracts.dll" />
+    <Content Include="bin\Debug\System.Diagnostics.Debug.dll" />
+    <Content Include="bin\Debug\System.Diagnostics.FileVersionInfo.dll" />
+    <Content Include="bin\Debug\System.Diagnostics.Process.dll" />
+    <Content Include="bin\Debug\System.Diagnostics.StackTrace.dll" />
+    <Content Include="bin\Debug\System.Diagnostics.TextWriterTraceListener.dll" />
+    <Content Include="bin\Debug\System.Diagnostics.Tools.dll" />
+    <Content Include="bin\Debug\System.Diagnostics.TraceSource.dll" />
+    <Content Include="bin\Debug\System.Diagnostics.Tracing.dll" />
+    <Content Include="bin\Debug\System.Drawing.Primitives.dll" />
+    <Content Include="bin\Debug\System.Dynamic.Runtime.dll" />
+    <Content Include="bin\Debug\System.Globalization.Calendars.dll" />
+    <Content Include="bin\Debug\System.Globalization.dll" />
+    <Content Include="bin\Debug\System.Globalization.Extensions.dll" />
+    <Content Include="bin\Debug\System.IO.Compression.dll" />
+    <Content Include="bin\Debug\System.IO.Compression.ZipFile.dll" />
+    <Content Include="bin\Debug\System.IO.dll" />
+    <Content Include="bin\Debug\System.IO.FileSystem.dll" />
+    <Content Include="bin\Debug\System.IO.FileSystem.DriveInfo.dll" />
+    <Content Include="bin\Debug\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="bin\Debug\System.IO.FileSystem.Watcher.dll" />
+    <Content Include="bin\Debug\System.IO.IsolatedStorage.dll" />
+    <Content Include="bin\Debug\System.IO.MemoryMappedFiles.dll" />
+    <Content Include="bin\Debug\System.IO.Pipes.dll" />
+    <Content Include="bin\Debug\System.IO.UnmanagedMemoryStream.dll" />
+    <Content Include="bin\Debug\System.Linq.dll" />
+    <Content Include="bin\Debug\System.Linq.Expressions.dll" />
+    <Content Include="bin\Debug\System.Linq.Parallel.dll" />
+    <Content Include="bin\Debug\System.Linq.Queryable.dll" />
+    <Content Include="bin\Debug\System.Net.Http.dll" />
+    <Content Include="bin\Debug\System.Net.NameResolution.dll" />
+    <Content Include="bin\Debug\System.Net.NetworkInformation.dll" />
+    <Content Include="bin\Debug\System.Net.Ping.dll" />
+    <Content Include="bin\Debug\System.Net.Primitives.dll" />
+    <Content Include="bin\Debug\System.Net.Requests.dll" />
+    <Content Include="bin\Debug\System.Net.Security.dll" />
+    <Content Include="bin\Debug\System.Net.Sockets.dll" />
+    <Content Include="bin\Debug\System.Net.WebHeaderCollection.dll" />
+    <Content Include="bin\Debug\System.Net.WebSockets.Client.dll" />
+    <Content Include="bin\Debug\System.Net.WebSockets.dll" />
+    <Content Include="bin\Debug\System.ObjectModel.dll" />
+    <Content Include="bin\Debug\System.Reflection.dll" />
+    <Content Include="bin\Debug\System.Reflection.Extensions.dll" />
+    <Content Include="bin\Debug\System.Reflection.Primitives.dll" />
+    <Content Include="bin\Debug\System.Resources.Reader.dll" />
+    <Content Include="bin\Debug\System.Resources.ResourceManager.dll" />
+    <Content Include="bin\Debug\System.Resources.Writer.dll" />
+    <Content Include="bin\Debug\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="bin\Debug\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="bin\Debug\System.Runtime.CompilerServices.VisualC.dll" />
+    <Content Include="bin\Debug\System.Runtime.dll" />
+    <Content Include="bin\Debug\System.Runtime.Extensions.dll" />
+    <Content Include="bin\Debug\System.Runtime.Handles.dll" />
+    <Content Include="bin\Debug\System.Runtime.InteropServices.dll" />
+    <Content Include="bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="bin\Debug\System.Runtime.Numerics.dll" />
+    <Content Include="bin\Debug\System.Runtime.Serialization.Formatters.dll" />
+    <Content Include="bin\Debug\System.Runtime.Serialization.Json.dll" />
+    <Content Include="bin\Debug\System.Runtime.Serialization.Primitives.dll" />
+    <Content Include="bin\Debug\System.Runtime.Serialization.Xml.dll" />
+    <Content Include="bin\Debug\System.Security.Claims.dll" />
+    <Content Include="bin\Debug\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="bin\Debug\System.Security.Cryptography.Csp.dll" />
+    <Content Include="bin\Debug\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="bin\Debug\System.Security.Cryptography.Primitives.dll" />
+    <Content Include="bin\Debug\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="bin\Debug\System.Security.Principal.dll" />
+    <Content Include="bin\Debug\System.Security.SecureString.dll" />
+    <Content Include="bin\Debug\System.Text.Encoding.dll" />
+    <Content Include="bin\Debug\System.Text.Encoding.Extensions.dll" />
+    <Content Include="bin\Debug\System.Text.RegularExpressions.dll" />
+    <Content Include="bin\Debug\System.Threading.dll" />
+    <Content Include="bin\Debug\System.Threading.Overlapped.dll" />
+    <Content Include="bin\Debug\System.Threading.Tasks.dll" />
+    <Content Include="bin\Debug\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="bin\Debug\System.Threading.Tasks.Extensions.xml" />
+    <Content Include="bin\Debug\System.Threading.Tasks.Parallel.dll" />
+    <Content Include="bin\Debug\System.Threading.Thread.dll" />
+    <Content Include="bin\Debug\System.Threading.ThreadPool.dll" />
+    <Content Include="bin\Debug\System.Threading.Timer.dll" />
+    <Content Include="bin\Debug\System.ValueTuple.dll" />
+    <Content Include="bin\Debug\System.ValueTuple.xml" />
+    <Content Include="bin\Debug\System.Xml.ReaderWriter.dll" />
+    <Content Include="bin\Debug\System.Xml.XDocument.dll" />
+    <Content Include="bin\Debug\System.Xml.XmlDocument.dll" />
+    <Content Include="bin\Debug\System.Xml.XmlSerializer.dll" />
+    <Content Include="bin\Debug\System.Xml.XPath.dll" />
+    <Content Include="bin\Debug\System.Xml.XPath.XDocument.dll" />
+    <Content Include="bin\Debug\TestHelper.dll" />
+    <Content Include="bin\Debug\TestHelper.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

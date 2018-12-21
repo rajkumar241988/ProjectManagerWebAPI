@@ -93,6 +93,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
+    <None Include="bin\Debug\ProjectManager.DAL.dll.config" />
+    <None Include="bin\Release\ProjectManager.DAL.dll.config" />
     <None Include="packages.config" />
     <EntityDeploy Include="ProjectManagerModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -106,6 +108,22 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\EntityFramework.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\Debug\EntityFramework.xml" />
+    <Content Include="bin\Debug\ProjectManager.DAL.dll" />
+    <Content Include="bin\Debug\ProjectManager.DAL.pdb" />
+    <Content Include="bin\Release\EntityFramework.dll" />
+    <Content Include="bin\Release\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\Release\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\Release\EntityFramework.xml" />
+    <Content Include="bin\Release\log4net.dll" />
+    <Content Include="bin\Release\log4net.xml" />
+    <Content Include="bin\Release\ProjectManager.DAL.dll" />
+    <Content Include="bin\Release\ProjectManager.DAL.pdb" />
+    <Content Include="bin\Release\ProjectManager.Logger.dll" />
+    <Content Include="bin\Release\ProjectManager.Logger.pdb" />
     <Content Include="ProjectManagerModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ProjectManagerModel.edmx</DependentUpon>
